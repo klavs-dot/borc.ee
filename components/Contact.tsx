@@ -4,15 +4,6 @@ export default function Contact() {
       id="contact"
       className="py-24 md:py-40 border-t border-rule relative overflow-hidden"
     >
-      {/* Glow */}
-      <div
-        aria-hidden
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full blur-3xl opacity-15 pointer-events-none"
-        style={{
-          background: "radial-gradient(ellipse, #D96C3A 0%, transparent 60%)",
-        }}
-      />
-
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 items-end">
           <div className="md:col-span-8">

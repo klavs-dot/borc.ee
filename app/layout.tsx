@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
+import BackgroundGlow from "@/components/BackgroundGlow";
 import "./globals.css";
 
 const display = Instrument_Serif({
@@ -67,7 +68,10 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${sans.variable} ${mono.variable}`}
     >
-      <body className="font-sans grain">{children}</body>
+      <body className="font-sans grain">
+        <BackgroundGlow />
+        {children}
+      </body>
     </html>
   );
 }
